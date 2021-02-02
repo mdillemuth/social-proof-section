@@ -13,6 +13,7 @@ html {
 
 body {
   padding: 80px 24px 100px;
+  min-height: 100vh;
   position: relative;
 }
 

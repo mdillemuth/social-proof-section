@@ -4,7 +4,7 @@ The following is my genuine and personalized solution to the Frontend Mentor cha
 
 - Responsive landing-page implemented in HTML & CSS
 - Developed from design assets provided by Frontend Mentor
-- [Viewable Live](https://mdillemuth.github.io/social-proof-section//)
+- [Viewable Live](https://mdillemuth.github.io/social-proof-section/)
 
 ## Motivation
 
