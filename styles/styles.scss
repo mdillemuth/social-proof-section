@@ -1,0 +1,118 @@
+// Reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+}
+
+// Variables
+$dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+$dark-gray-magenta: hsl(303, 10%, 53%);
+$light-gray-magenta: hsl(300, 24%, 96%);
+
+body {
+  padding: 80px 24px 100px;
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 40px;
+  h1 {
+    color: $dark-magenta;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  p {
+    color: $dark-gray-magenta;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .rating-container {
+    margin-bottom: 16px;
+    padding: 16px 0;
+    border-radius: 8px;
+    background-color: $light-gray-magenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: $dark-magenta;
+      font-weight: bolder;
+      font-size: 13px;
+    }
+  }
+}
+
+.testimonials {
+  margin-bottom: 80px;
+  .testimonial-container {
+    background-color: $dark-magenta;
+    border-radius: 8px;
+    padding: 40px 32px;
+    margin-bottom: 16px;
+
+    .testimonial-quote {
+      color: #fff;
+      font-size: 13px;
+    }
+
+    .testimonial-heading {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      img {
+        border-radius: 50%;
+        width: 40px;
+        margin-right: 24px;
+      }
+
+      .testimonial-heading-text {
+        font-size: 13px;
+        h3 {
+          color: #fff;
+          font-weight: bold;
+        }
+        p {
+          color: $soft-pink;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+// Desktop Styles
+@media all and (min-width: 1440px) {
+}
