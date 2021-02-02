@@ -21,6 +21,36 @@ body {
   padding: 80px 24px 100px;
   min-height: 100vh;
   position: relative;
+
+  // Background images
+  .top-img-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+  }
+  .bottom-img-mobile {
+    width: 1085px;
+    height: 673px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    z-index: -999;
+  }
+  .top-img-desktop {
+    display: none;
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bottom-img-desktop {
+    display: none;
+    z-index: -999;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+  }
 }
 
 header {
@@ -126,8 +156,23 @@ header {
 @media all and (min-width: 1440px) {
   body {
     padding: 125px 165px;
+
+    // Swap background images
+    .top-img-mobile {
+      display: none;
+    }
+    .bottom-img-mobile {
+      display: none;
+    }
+    .top-img-desktop {
+      display: unset;
+    }
+    .bottom-img-desktop {
+      display: unset;
+    }
   }
 
+  // Heading text and ratings cards
   .container-top {
     max-width: 1110px;
     margin: 0 auto;

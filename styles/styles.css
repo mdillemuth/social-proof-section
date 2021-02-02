@@ -17,6 +17,38 @@ body {
   position: relative;
 }
 
+body .top-img-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+body .bottom-img-mobile {
+  width: 1085px;
+  height: 673px;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  z-index: -999;
+}
+
+body .top-img-desktop {
+  display: none;
+  z-index: -999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .bottom-img-desktop {
+  display: none;
+  z-index: -999;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+
 header {
   max-width: 445px;
   margin: 0 auto 40px;
@@ -151,6 +183,18 @@ header p {
 @media all and (min-width: 1440px) {
   body {
     padding: 125px 165px;
+  }
+  body .top-img-mobile {
+    display: none;
+  }
+  body .bottom-img-mobile {
+    display: none;
+  }
+  body .top-img-desktop {
+    display: unset;
+  }
+  body .bottom-img-desktop {
+    display: unset;
   }
   .container-top {
     max-width: 1110px;
