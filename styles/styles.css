@@ -14,11 +14,11 @@ html {
 body {
   padding: 80px 24px 100px;
   position: relative;
-  min-height: 100vh;
 }
 
 header {
-  margin-bottom: 40px;
+  max-width: 445px;
+  margin: 0 auto 40px;
 }
 
 header h1 {
@@ -36,6 +36,9 @@ header p {
 }
 
 .ratings {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,6 +50,8 @@ header p {
 }
 
 .ratings .rating-container {
+  width: 100%;
+  max-width: 445px;
   margin-bottom: 16px;
   padding: 16px 0;
   border-radius: 8px;
@@ -74,9 +79,21 @@ header p {
 
 .testimonials {
   margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonials .testimonial-container {
+  width: 100%;
+  max-width: 350px;
   background-color: #502050;
   border-radius: 8px;
   padding: 40px 32px;
@@ -119,15 +136,61 @@ header p {
 
 .attribution {
   position: absolute;
-  bottom: 24px;
+  bottom: 16px;
   left: 0;
   right: 0;
-  margin: 0 auto;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media all and (min-width: 1440px) {
+  body {
+    padding: 125px 165px;
+  }
+  .container-top {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container-top header {
+    margin: 0;
+  }
+  .container-top header h1 {
+    font-size: 48px;
+    text-align: left;
+  }
+  .container-top header p {
+    text-align: left;
+  }
+  .container-top .rating-container:nth-of-type(2) {
+    margin-left: 50px;
+  }
+  .container-top .rating-container:nth-of-type(3) {
+    margin-left: 100px;
+  }
+  .testimonials {
+    max-width: 1100px;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .testimonials .testimonial-container:nth-of-type(2) {
+    margin-top: 16px;
+  }
+  .testimonials .testimonial-container:nth-of-type(3) {
+    margin-top: 32px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
